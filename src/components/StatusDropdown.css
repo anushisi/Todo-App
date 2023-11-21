@@ -1,0 +1,91 @@
+/* StatusDropdown.css */
+
+.status-dropdown {
+  margin-top: 10px;
+  position: relative;
+}
+
+#status {
+  padding: 5px;
+  width: 7rem;
+  max-width: 100%;
+}
+
+.done {
+  color: #ffA500; /* Color for "Done" */
+}
+
+.not-done {
+  color: #ffff99; /* Color for "Not Done" */
+}
+
+.status-display {
+  margin-top: 5px;
+}
+
+.btn {
+  display: flex;
+  margin: 5px;
+}
+
+/* Additional styling for the button inside .btn */
+.btn div {
+  display: flex;
+  margin: 5px;
+}
+
+.btn button {
+  cursor: pointer;
+  padding: 12px;
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Apply styles for tablets and smaller screens */
+  .status-dropdown {
+    margin-top: 5px;
+  }
+
+  #status {
+    width: 100%;
+  }
+
+  .status-display {
+    margin-top: 5px;
+  }
+
+  /* Responsive styles for the button */
+  .btn button {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Apply styles for mobile devices */
+  .status-dropdown {
+    margin-top: 5px;
+  }
+
+  #status {
+    width: 100%;
+  }
+
+  .status-display {
+    margin-top: 5px;
+  }
+
+  /* Responsive styles for the button */
+  .btn button {
+    padding: 6px;
+  }
+}
